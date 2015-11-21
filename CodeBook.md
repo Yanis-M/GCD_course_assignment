@@ -59,6 +59,9 @@ across those original sets.
 
 ========================================
 
+Units:
+The original acceleration measurements were shown in standard gravity units "g". The body acceleration signal was obtained by subtracting gravity from the total acceleration. The angular velocity vector was measured by the gyroscope for each window sample. The units were radians/second. These raw measurements were subsequently normalized and bound between -1 and 1.
+
 Column descriptions:
 
 Subject:
@@ -68,8 +71,7 @@ spread out on the same row of the table as their Subject id.
 
 Each of the subsequent 396 columns correspond to a data variable that contains the mean value
 (for each subject) for the mean or standard deviation of one of the measurements that were
-provided in the X_train.txt and X_test.txt files. The original UCI_HAR data were represented
-as z-scores. Thus, all of the data are unitless. The header of each of the columns corresponds
+provided in the X_train.txt and X_test.txt files. The header of each of the columns corresponds
 to a multi-element code that identifies the specific measurement. 
 
 	Code element:			Possible entries:
