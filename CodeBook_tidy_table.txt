@@ -1,6 +1,9 @@
 
-Codebook for a summary table of a subset of data from the Human Activity Recognition Using Smartphones Dataset Version 1.0 provided by Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto. Smartlab - Non Linear Complex Systems Laboratory, DITEN - Università degli Studi di Genova.
-Via Opera Pia 11A, I-16145, Genoa, Italy.
+Codebook for a summary table of a subset of data from the Human Activity Recognition
+Using Smartphones Dataset Version 1.0 provided by Jorge L. Reyes-Ortiz, Davide Anguita, 
+Alessandro Ghio, Luca Oneto. Smartlab - Non Linear Complex Systems Laboratory, DITEN - 
+Università degli Studi di Genova.
+
 
 =========================================
 
@@ -42,18 +45,32 @@ fBodyAccJerkMag
 fBodyGyroMag
 fBodyGyroJerkMag
 
-In concordance with the assignment's instructions, only data from the mean() and std() variables are summarized in the file "tidy.table.txt". Additional vectors (gravityMean, tBodyAccMean,tBodyAccJerkMean, tBodyGyroMean,tBodyGyroJerkMean), which were obtained by averaging the signals in a signal window sample were excluded from the summary because they were not themsleves the mean of one of the 33 signals shown above. 
+In concordance with the assignment's instructions, only data from the mean() and std()
+ variables are summarized in the file "tidy.table.txt". Additional vectors (gravityMean, 
+tBodyAccMean,tBodyAccJerkMean, tBodyGyroMean,tBodyGyroJerkMean), which were obtained by 
+averaging the signals in a signal window sample were excluded from the summary because 
+they were not themsleves the mean of one of the 33 signals shown above. 
 
-The data are organized into a 30 X 397 table (in tidy.table.txt) with headers for each column. Each data value in this table represents the mean value of a measurement that was calculated for each subject across multiple trials. The UCI_HAR_dataset originally randomly partitioned these data into training and testing sets. The present summary table collapses across those original sets. 
+The data are organized into a 30 X 397 table (in tidy.table.txt) with headers for each 
+column. Each data value in this table represents the mean value of a measurement that was
+calculated for each subject across multiple trials. The UCI_HAR_dataset originally randomly
+partitioned these data into training and testing sets. The present summary table collapses 
+across those original sets. 
 
 ========================================
 
 Column descriptions:
 
 Subject:
-Positioned at the first column (left side) of the table, the Subject column provides a numeric id label for each of the 30 individuals who participated in the study. Each subject's data is spread out on the same row of the table as their Subject id. 
+Positioned at the first column (left side) of the table, the Subject column provides a numeric
+id label for each of the 30 individuals who participated in the study. Each subject's data is
+spread out on the same row of the table as their Subject id. 
 
-Each of the subsequent 396 columns correspond to a data variable that contains the mean value (for each subject) for the mean or standard deviation of one of the measurements that were provided in the X_train.txt and X_test.txt files. The original UCI_HAR data were represented as z-scores. Thus, all of the data are unitless. The header of each of the columns corresponds to a multi-element code that identifies the specific measurement. 
+Each of the subsequent 396 columns correspond to a data variable that contains the mean value
+(for each subject) for the mean or standard deviation of one of the measurements that were
+provided in the X_train.txt and X_test.txt files. The original UCI_HAR data were represented
+as z-scores. Thus, all of the data are unitless. The header of each of the columns corresponds
+to a multi-element code that identifies the specific measurement. 
 
 	Code element:			Possible entries:
 	Activity 			Lay, Sit, Stand, Walk, WalkUp, WalkDown
@@ -67,7 +84,10 @@ Each of the subsequent 396 columns correspond to a data variable that contains t
 
 
 Activity:
-The first element of the code corresponds to a label for 1 of 6 activities (behavioral actions) that were performed by each subject. The original UCI_HAR activity labels were modified to improve readability in table format. Here is a list showing the correspondence between the original and modified activity labels:
+The first element of the code corresponds to a label for 1 of 6 activities (behavioral actions)
+that were performed by each subject. The original UCI_HAR activity labels were modified to
+improve readability in table format. Here is a list showing the correspondence between the
+original and modified activity labels:
 
 	Original Label		Modified Label
 	Laying			Lay
@@ -79,8 +99,10 @@ The first element of the code corresponds to a label for 1 of 6 activities (beha
 
 Frequency or Time: 
 This code element indicates whether the variable was frequency-based or time-based.
-"f" labels data that were submitted to a Free Fourier Transformation (FFT), which correspond to frequency domain signals. 
-"t" labels measurements that were captured at a constant rate of 50 Hz, which correspond to time domain signals.
+"f" labels data that were submitted to a Free Fourier Transformation (FFT), which correspond
+to frequency domain signals. 
+"t" labels measurements that were captured at a constant rate of 50 Hz, which correspond to
+time domain signals.
 
 Body or Gravity:
 This code element corresponds to different components of signals collected by the sensors.
@@ -88,19 +110,25 @@ This code element corresponds to different components of signals collected by th
 "Gravity" represents a sensor acceleration signal.
 
 Acc or Gyro:
-Signal detected from either an accelerometer (Acc), which estimated axial acceleration, or from a gyroscope (Gyro), which estimated angular velocity.
+Signal detected from either an accelerometer (Acc), which estimated axial acceleration, or
+from a gyroscope (Gyro), which estimated angular velocity.
 
 Jerk: 
-Some variables contain the code element "Jerk". These columns consist of data of body linear acceleration or angular velocity that were derived in time. 
+Some variables contain the code element "Jerk". These columns consist of data of body linear
+acceleration or angular velocity that were derived in time. 
 
 Mag:
-Some variables contain the code element "Mag". These columns consist of the calculated magnitude of the three-dimensional signals. The magnitude was original calculated using the Euclidian norm.
+Some variables contain the code element "Mag". These columns consist of the calculated magnitude
+of the three-dimensional signals. The magnitude was original calculated using the Euclidian norm.
 
 Statisic:
-The UCI_HAR_dataset contained a numerous measurements that were excluded from this data summary. This summary includes variables that contained mean() or std() in its header. The code elements "mean" and "std" correspond to those original statistical calculations.
+The UCI_HAR_dataset contained a numerous measurements that were excluded from this data summary.
+This summary includes variables that contained mean() or std() in its header. The code elements
+"mean" and "std" correspond to those original statistical calculations.
 
 Axis:
-Some variables end with the code element X, Y, or Z. The accelerometer and gyroscopes provided 3-axial signals. The last code element (X,Y, or Z) labels the corresponding axis.
+Some variables end with the code element X, Y, or Z. The accelerometer and gyroscopes provided
+3-axial signals. The last code element (X,Y, or Z) labels the corresponding axis.
 
 ========================================
 
