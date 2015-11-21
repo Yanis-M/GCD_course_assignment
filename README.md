@@ -26,7 +26,7 @@ Script actions:
 1) Reads these 8 files into R and assigns object names:
 
 Original file name:	R object name:
--------------------------------------	
+	
 features.txt		features
 activity_labels.txt	activity_labels
 X_train.txt		x.train
