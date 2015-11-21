@@ -24,16 +24,15 @@ The script contains detail comments about the code, which is summarized here.
 Script actions:
 
 1) Reads these 8 files into R and assigns object names:
-
-	Original file name:	R object name:	
-	features.txt		features
-	activity_labels.txt	activity_labels
-	X_train.txt		x.train
-	y_train.txt		y.train
-	subject_train.txt	subject.train
-	X_test.txt		x.test
-	y_test.txt		y.test
-	subject_test.txt	subject.test
+	
+	features.txt =	features
+	activity_labels.txt =	activity_labels
+	X_train.txt =	x.train
+	y_train.txt =	y.train
+	subject_train.txt = 	subject.train
+	X_test.txt =	x.test
+	y_test.txt =	y.test
+	subject_test.txt =	subject.test
 
 2) Loads the dplyr and tidyr packages into R.
 
