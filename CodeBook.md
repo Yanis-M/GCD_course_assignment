@@ -11,38 +11,38 @@ The tidy data set presented here consists of summary data from the UCI_HAR_datas
 
 The data were estimated from 33 signals reported in the orignal study:
 
-tBodyAcc-X
-tBodyAcc-Y
-tBodyAcc-Z
-tGravityAcc-X
-tGravityAcc-Y
-tGravityAcc-Z
-tBodyAccJerk-X
-tBodyAccJerk-Y
-tBodyAccJerk-Z
-tBodyGyro-X
-tBodyGyro-Y
-tBodyGyro-Z
-tBodyGyroJerk-X
-tBodyGyroJerk-Y
-tBodyGyroJerk-Z
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-X
-fBodyAcc-Y
-fBodyAcc-Z
-fBodyAccJerk-X
-fBodyAccJerk-Y
-fBodyAccJerk-Z
-fBodyGyro-X
-fBodyGyro-Y
-fBodyGyro-Z
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
+tBodyAcc-X, 
+tBodyAcc-Y, 
+tBodyAcc-Z, 
+tGravityAcc-X, 
+tGravityAcc-Y, 
+tGravityAcc-Z, 
+tBodyAccJerk-X, 
+tBodyAccJerk-Y, 
+tBodyAccJerk-Z, 
+tBodyGyro-X, 
+tBodyGyro-Y, 
+tBodyGyro-Z, 
+tBodyGyroJerk-X, 
+tBodyGyroJerk-Y, 
+tBodyGyroJerk-Z, 
+tBodyAccMag, 
+tGravityAccMag, 
+tBodyAccJerkMag, 
+tBodyGyroMag, 
+tBodyGyroJerkMag, 
+fBodyAcc-X, 
+fBodyAcc-Y, 
+fBodyAcc-Z, 
+fBodyAccJerk-X, 
+fBodyAccJerk-Y, 
+fBodyAccJerk-Z, 
+fBodyGyro-X, 
+fBodyGyro-Y, 
+fBodyGyro-Z, 
+fBodyAccMag, 
+fBodyAccJerkMag, 
+fBodyGyroMag, 
 fBodyGyroJerkMag
 
 In concordance with the assignment's instructions, only data from the mean() and std()
@@ -73,14 +73,14 @@ as z-scores. Thus, all of the data are unitless. The header of each of the colum
 to a multi-element code that identifies the specific measurement. 
 
 	Code element:			Possible entries:
-	Activity 			Lay, Sit, Stand, Walk, WalkUp, WalkDown
+	Activity 				Lay, Sit, Stand, Walk, WalkUp, WalkDown
 	Frequency or Time 		f, t
 	Signal Component 		Body, Gravity
-	Measurement			Acc, Gyro
-	Jerk:				Jerk
-	Magnitude:			Mag
-	Statistic 			mean, std
-	Axis				x,y,z
+	Measurement				Acc, Gyro
+	Jerk:					Jerk
+	Magnitude:				Mag
+	Statistic 				mean, std
+	Axis					x,y,z
 
 
 Activity:
@@ -90,12 +90,12 @@ improve readability in table format. Here is a list showing the correspondence b
 original and modified activity labels:
 
 	Original Label		Modified Label
-	Laying			Lay
-	Sitting			Sit
-	Standing		Stand
-	Walking			Walk
+	Laying				Lay
+	Sitting				Sit
+	Standing			Stand
+	Walking				Walk
 	Walking_Down		WalkDown
-	Walking_Up		WalkUp
+	Walking_Up			WalkUp
 
 Frequency or Time: 
 This code element indicates whether the variable was frequency-based or time-based.
@@ -134,24 +134,25 @@ Some variables end with the code element X, Y, or Z. The accelerometer and gyros
 
 Here is a complete list of all the column headers used in the summary table:
 
-Lay_fBodyAcc_mean_X
-Lay_fBodyAcc_mean_Y
-Lay_fBodyAcc_mean_Z
-Lay_fBodyAcc_std_X
-Lay_fBodyAcc_std_Y
-Lay_fBodyAcc_std_Z
-Lay_fBodyAccJerk_mean_X
-Lay_fBodyAccJerk_mean_Y
-Lay_fBodyAccJerk_mean_Z
-Lay_fBodyAccJerk_std_X
-Lay_fBodyAccJerk_std_Y
-Lay_fBodyAccJerk_std_Z
-Lay_fBodyAccJerkMag_mean
-Lay_fBodyAccJerkMag_std
-Lay_fBodyAccMag_mean
-Lay_fBodyAccMag_std
-Lay_fBodyGyro_mean_X
+Lay_fBodyAcc_mean_X, 
+Lay_fBodyAcc_mean_Y, 
+Lay_fBodyAcc_mean_Z, 
+Lay_fBodyAcc_std_X, 
+Lay_fBodyAcc_std_Y, 
+Lay_fBodyAcc_std_Z, 
+Lay_fBodyAccJerk_mean_X, 
+Lay_fBodyAccJerk_mean_Y, 
+Lay_fBodyAccJerk_mean_Z, 
+Lay_fBodyAccJerk_std_X, 
+Lay_fBodyAccJerk_std_Y, 
+Lay_fBodyAccJerk_std_Z, 
+Lay_fBodyAccJerkMag_mean, 
+Lay_fBodyAccJerkMag_std, 
+Lay_fBodyAccMag_mean, 
+Lay_fBodyAccMag_std, 
+Lay_fBodyGyro_mean_X, 
 Lay_fBodyGyro_mean_Y
+
 Lay_fBodyGyro_mean_Z
 Lay_fBodyGyro_std_X
 Lay_fBodyGyro_std_Y
