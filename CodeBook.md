@@ -61,6 +61,7 @@ across those original sets.
 ========================================
 
 Units:
+
 The original acceleration measurements were shown in standard gravity units "g". The body acceleration signal was obtained by subtracting gravity from the total acceleration. The angular velocity vector was measured by the gyroscope for each window sample. The units were radians/second. These raw measurements were subsequently normalized and bound between -1 and 1.
 
 Column descriptions:
@@ -87,6 +88,7 @@ to a multi-element code that identifies the specific measurement.
 
 
 Activity:
+
 The first element of the code corresponds to a label for 1 of 6 activities (behavioral actions)
 that were performed by each subject. The original UCI_HAR activity labels were modified to
 improve readability in table format. Here is a list showing the correspondence between the
@@ -101,6 +103,7 @@ original and modified activity labels:
 	Walking_Up			WalkUp
 
 Frequency or Time: 
+
 This code element indicates whether the variable was frequency-based or time-based.
 "f" labels data that were submitted to a Free Fourier Transformation (FFT), which correspond
 to frequency domain signals. 
@@ -108,28 +111,34 @@ to frequency domain signals.
 time domain signals.
 
 Body or Gravity:
+
 This code element corresponds to different components of signals collected by the sensors.
 "Body" were body motion components. 
 "Gravity" represents a sensor acceleration signal.
 
 Acc or Gyro:
+
 Signal detected from either an accelerometer (Acc), which estimated axial acceleration, or
 from a gyroscope (Gyro), which estimated angular velocity.
 
 Jerk: 
+
 Some variables contain the code element "Jerk". These columns consist of data of body linear
 acceleration or angular velocity that were derived in time. 
 
 Mag:
+
 Some variables contain the code element "Mag". These columns consist of the calculated magnitude
 of the three-dimensional signals. The magnitude was original calculated using the Euclidian norm.
 
 Statisic:
+
 The UCI_HAR_dataset contained a numerous measurements that were excluded from this data summary.
 This summary includes variables that contained mean() or std() in its header. The code elements
 "mean" and "std" correspond to those original statistical calculations.
 
 Axis:
+
 Some variables end with the code element X, Y, or Z. The accelerometer and gyroscopes provided
 3-axial signals. The last code element (X,Y, or Z) labels the corresponding axis.
 
