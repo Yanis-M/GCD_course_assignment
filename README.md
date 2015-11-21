@@ -4,7 +4,7 @@ This is the README file for the run_analysis.R script for Getting and Tidying Da
 The data summary is based on the Human Activity Recognition Using Smartphones Dataset Version 1.0 by Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto. Smartlab - Non Linear Complex Systems Laboratory, DITEN - Università degli Studi di Genova.
 Via Opera Pia 11A, I-16145, Genoa, Italy.
 
-The script is available at <INSERT URL>
+The script is available at https://github.com/cosmogyrals/GCD_course_assignment.git
 
 The tidy.table.txt text file can be read into R with the following code:
 
@@ -25,8 +25,7 @@ Script actions:
 
 1) Reads these 8 files into R and assigns object names:
 
-Original file name:	R object name:
-	
+Original file name:	R object name:	
 features.txt		features
 activity_labels.txt	activity_labels
 X_train.txt		x.train
