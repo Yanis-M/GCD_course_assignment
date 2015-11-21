@@ -17,8 +17,7 @@ subject.test <- read.table("./UCI_Har_Dataset/test/subject_test.txt")
 library(dplyr)
 library(tidyr)
 
-# Part 1: Merges the training and the test sets to create one data set.
-
+# Merge the training and the test sets to create one data set.
 #bind rows train and test variables
 x.df <- bind_rows(x.train,x.test)
 y.df <- bind_rows(y.train,y.test)
